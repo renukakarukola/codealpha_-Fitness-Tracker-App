@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker</h1>
+
+    <form id="fitness-form">
+      <input type="date" id="date" required>
+      <input type="number" id="steps" placeholder="Steps walked" required>
+      <input type="text" id="exercise" placeholder="Exercise type (e.g. Running)" required>
+      <input type="number" id="duration" placeholder="Duration (minutes)" required>
+      <input type="number" id="calories" placeholder="Calories burned" required>
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <div class="dashboard">
+      <h2>Daily Summary</h2>
+      <div id="daily-summary"></div>
+
+      <h2>Weekly Overview</h2>
+      <canvas id="weekly-chart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
